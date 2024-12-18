@@ -26,7 +26,8 @@ int send_get_request(const std::string& url) {
 
 int main() {
     std::string url = "http://localhost:8080/";
-    send_get_request(url);
+    std::string encrypted = encrypt(url, "key");
+    send_get_request(encrypted);
     return 0;
 }
 
