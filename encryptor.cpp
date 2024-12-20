@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <string>
-#include <curl/curl.h>
+#include <winhttp.h>
 
 std::string encrypt(const std::string& str, const std::string& key) {
     std::string encrypted = str;
